@@ -1,0 +1,4 @@
+html file
+css file
+link both file
+and write there boilerplate code
