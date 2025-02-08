@@ -1,0 +1,47 @@
+
+
+#box{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+#one{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
+
+#two{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(31, 149, 1);
+}
+
+#three{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 38, 255);
+}
+
+p::before{
+    content: '<';
+}
+
+p::after{
+    content: '>';
+}
+
+h4::first-line{
+    color: red;
+}
+
+h4::first-letter{
+    font-size: 120px;
+}
+
+h3:hover{
+    color: red;
+}
