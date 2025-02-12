@@ -103,5 +103,79 @@ html, body{
 }
 
 @media (max-width: 600px) {
+    #nav{
+        height: 60px;
+        padding: 20px;
+        gap: 0 20px;
+    }
+    #nav h4{
+        font-size: 12px;
+        width: 600;
+    }
+    #nav i{
+        font-size: 12px;
+        background-color: black;
+        color: white;
+        padding: 8px;
+        border-radius: 50%;
+        font-weight: 500;
+    }
+    #centre{
+        padding: 5px 20px;
+        width: 100%;
+    }
+    #centre h1{
+        /* font-size: 70px; */
+        font-size: 11vw;
+        font-weight: 500;
+        line-height: 12vw;
+    }
+    #centre-in{
+        /* background-color: red; */
+        margin-top: 30px;
+        /* height: 200px; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #centre-in p{
+        font-size: 3.7vw;
+        font-weight: 500;
+        line-height: 5.7vw;
+    }
+    #right{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .elem{
+        /* background-color: yellow; */
+        /* margin: 5px; */
+        padding: 12px 0;
+        border-top: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .elem a{
+        color: rgb(67, 67, 67);
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 600;
+    }
     
+    .elem i{
+        font-size: 15px;
+        font-weight: 500;
+        opacity: 1;
+        color: rgb(67, 67, 67);
+    }
+    #bottom{
+        height: 33.5%;
+        width: 100%;
+        /* background-color: rgb(255, 0, 0); */
+        background-image: url(puffer.webp);
+        background-size: cover;
+        background-position: 0 30%;
+    }
 }
