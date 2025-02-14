@@ -1,8 +1,11 @@
+@font-face {
+    font-family: Custom;
+    src: url(style.css);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 html, body{
@@ -12,170 +15,26 @@ html, body{
 #main{
     height: 100%;
     width: 100%;
-    background-color: white;
-}
-#nav{
-    /* height: 100px; */
-    width: 100%;
-    /* background-color: rgb(255, 239, 223); */
+    /* background-color: red; */
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding: 30px;
-    gap: 0 30px;
-}
-
-#nav h4{
-    font-size: 15px;
-    width: 600;
-}
-#nav i{
-    font-size: 20px;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
-    font-weight: 500;
-}
-#centre{
-    padding: 5px 50px;
-    width: 100%;
-}
-#centre h1{
-    /* font-size: 70px; */
-    font-size: 4.5vw;
-    font-weight: 500;
-    line-height: 4.7vw;
-}
-#centre-in{
-    /* background-color: red; */
-    margin-top: 30px;
-    /* height: 200px; */
-    width: 100%;
-    display: flex;
     justify-content: space-between;
+    padding: 50px 90px;
+    margin-top: 90px;
 }
-#centre-in p{
-    font-size: 1.4vw;
-    font-weight: 500;
-    line-height: 1.9vw;
+#left{
+    height: 100%;
+    width: 48%;
+    background-color: rgb(0, 255, 251);
 }
 #right{
-    width: 20%;
+    height: 100%;
+    width: 48%;
+    background-color: rgb(162, 255, 0);
 }
-.elem{
-    /* background-color: yellow; */
-    /* margin: 5px; */
-    padding: 18px 0;
-    border-top: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.elem a{
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
+#left h1{
+    font-size: 130px;
     font-weight: 600;
-}
-
-.elem i{
-    font-size: 25px;
-    font-weight: 500;
-    opacity: 0;
-}
-.elem:hover i{
-    opacity: 1;
-}
-.elem:hover a{
-    text-decoration: underline;
-}
-.elem:hover{
-    background-color: rgba(203, 203, 203, 0.381);
-}
-#bottom{
-    height: 34%;
-    width: 100%;
-    /* background-color: rgb(255, 0, 0); */
-    background-image: url(puffer.webp);
-    background-size: cover;
-    background-position: 0 30%;
-}
-
-@media (max-width: 600px) {
-    #nav{
-        height: 60px;
-        padding: 20px;
-        gap: 0 20px;
-    }
-    #nav h4{
-        font-size: 12px;
-        width: 600;
-    }
-    #nav i{
-        font-size: 12px;
-        background-color: black;
-        color: white;
-        padding: 8px;
-        border-radius: 50%;
-        font-weight: 500;
-    }
-    #centre{
-        padding: 5px 20px;
-        width: 100%;
-    }
-    #centre h1{
-        /* font-size: 70px; */
-        font-size: 11vw;
-        font-weight: 500;
-        line-height: 12vw;
-    }
-    #centre-in{
-        /* background-color: red; */
-        margin-top: 30px;
-        /* height: 200px; */
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    #centre-in p{
-        font-size: 3.7vw;
-        font-weight: 500;
-        line-height: 5.7vw;
-    }
-    #right{
-        margin-top: 30px;
-        width: 100%;
-    }
-    .elem{
-        /* background-color: yellow; */
-        /* margin: 5px; */
-        padding: 12px 0;
-        border-top: 1px solid black;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .elem a{
-        color: rgb(67, 67, 67);
-        text-decoration: none;
-        font-size: 12px;
-        font-weight: 600;
-    }
-    
-    .elem i{
-        font-size: 15px;
-        font-weight: 500;
-        opacity: 1;
-        color: rgb(67, 67, 67);
-    }
-    #bottom{
-        height: 33.5%;
-        width: 100%;
-        /* background-color: rgb(255, 0, 0); */
-        background-image: url(puffer.webp);
-        background-size: cover;
-        background-position: 0 30%;
-    }
+    line-height: 110px;
+    font-family: neue haas;
 }
