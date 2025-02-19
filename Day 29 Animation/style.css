@@ -9,3 +9,57 @@ html, body{
     height: 100%;
     width: 100%;
 }
+/* #box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    animation-name: anime;
+    animation-duration: 2s;
+}
+
+@keyframes anime{
+    from{
+        left: 0;
+        background-color: red;
+        rotate: 0;
+    }
+    to{
+        left: 70%;
+        background-color: orangered;
+        rotate: 360deg;
+    }
+} */
+
+#box1{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+    position: relative;
+    animation-name: box-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2; 
+    /* set animation count infinite for a loop */
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    /* animation-timing-function - is to control the time graph of the animation */
+}
+#box2{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+    position: relative;
+    animation-name: box-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes box-animation {
+    from{
+        left: 0;
+    }
+    to{
+        left: 75%;
+    }
+}
