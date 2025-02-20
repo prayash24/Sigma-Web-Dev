@@ -45,7 +45,7 @@ html, body{
     animation-timing-function: ease-in-out;
     /* animation-timing-function - is to control the time graph of the animation */
 }
-#box2{
+/* #box2{
     height: 300px;
     width: 300px;
     background-color: crimson;
@@ -53,13 +53,27 @@ html, body{
     animation-name: box-animation;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-}
+} */
 
-@keyframes box-animation {
+/* @keyframes box-animation {
     from{
         left: 0;
     }
     to{
         left: 75%;
     }
+} */
+
+h1{
+    font-size: 100px;
+    color: red;
+}
+
+h1::after{
+    content: "World";
+    color: blue;
+}
+h1::before{
+    content: "Guyss";
+    color: blue;
 }
