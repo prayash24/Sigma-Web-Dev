@@ -1,8 +1,12 @@
+@font-face {
+    font-family: monument;
+    src: url(./MonumentExtended-Ultrabold.otf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 html, body{
@@ -14,9 +18,103 @@ html, body{
     width: 100%;
     background-color: #f8f8f8;
     position: relative;
+    padding: 0.01px;
 }
 #nav{
-    height: 100px;
+    margin-top: 30px;
+    height: 10vh;
     width: 100%;
-    background-color: red;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h1{
+    font-family: monument;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -1px;
+    font-size: 30px;
+}
+#nav h2{
+    height: 100%;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 16px;
+    font-weight: 500;
+    /* background-color: red; */
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+#nav h2:nth-last-child(2){
+    width: 21%;
+}
+#center{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 4vw 7vw;
+    position: relative;
+}
+#content{
+    height: 92%;
+    width: 100%;
+    background-color: blue;
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    /* background-color: red; */
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+    color: #fff;
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+#over1 h1{
+    font-family: monument;
+    font-size: 3.6vw;
+    font-weight: 100;
+}
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw 2vw;
+    border-radius: 50%;
+    /* background-color: white; */
+    /* color: red; */
+    border: 2px solid white;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1.5vw 0;
+}
+#over2 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+#over2 img{
+   height: 3vw; 
 }
