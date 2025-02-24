@@ -12,6 +12,7 @@
 html, body{
     height: 100%;
     width: 100%;
+    background-color: #f8f8f8;
 }
 #main{
     height: 100%;
@@ -117,4 +118,94 @@ html, body{
 }
 #over2 img{
    height: 3vw; 
+}
+#scroll{
+    height: 30vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* background-color: red; */
+}
+#container{
+    height: 70%;
+    /* width: 110%; */
+    display: inline-block;
+    padding: 0 1vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#scroll img{
+    margin: 1.4vw;
+    height: 100%;
+    width: 9.6%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+#alpha{
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#alpha h5{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 2px solid #000;
+}
+#alpha h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding: 0.6vw;
+    border-radius: 50%;
+    border: 0.7px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+#alpha h6:hover{
+    border: 0.7px solid rgb(0, 0, 0);
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 8vw;
+}
+#part1{
+    height: 100%;
+    width: 55%;
+    background-image: url(./Img/5.jpg);
+    background-size: cover;
+}
+#part2{
+    height: 100%;
+    width: 40%;
+}
+#part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
 }
