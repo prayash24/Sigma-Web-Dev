@@ -186,6 +186,7 @@ html, body{
     justify-content: space-between;
     padding: 5vh 8vw;
 }
+
 #part1{
     height: 100%;
     width: 55%;
@@ -201,6 +202,7 @@ html, body{
     width: 100%;
     object-fit: cover;
 }
+
 @keyframes anime {
     from{
         transform: translateX(0);
@@ -208,4 +210,50 @@ html, body{
     to{
         transform: translateX(-100%);
     }
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+}
+#page3>h1{
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-bottom: 5vh;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 59px;
+    height: 16vh;
+    width: 93%;
+    border-top: 2px solid black;
+}
+.elem h4{
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 6%;
+    line-height: 1.2vw;
+}
+.elem #elempart2{
+    width: 55%;
+}
+.elem #elempart2 h1{
+    font-size: 2.7vw;
+    font-weight: 600;
+}
+.elem #elempart2 h5{
+    font-size: 1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
 }
