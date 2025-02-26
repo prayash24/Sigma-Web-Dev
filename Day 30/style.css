@@ -247,11 +247,11 @@ html, body{
 }
 .elem #elempart2 h1{
     font-size: 2.7vw;
-    font-weight: 600;
+    font-weight: 300;
 }
 .elem #elempart2 h5{
     font-size: 1vw;
-    font-weight: 600;
+    font-weight: 300;
     text-transform: uppercase;
 }
 .elem:nth-last-child(1){
