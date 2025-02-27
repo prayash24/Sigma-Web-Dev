@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(255, 240, 154, 0.768); */
+}
+#nav{
+    padding: 0 40px;
+    height: 100px;
+    width: 100%;
+    /* background-color: royalblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navpart1{
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navpart1 h4{
+    font-size: 13px;
+    font-weight: 400;
+}
+#nav img{
+    height: 50px; 
+    margin-bottom: 5px;
+}
+#navpart2{
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#navpart2 button:nth-child(1){
+    background-color: transparent;
+    color: black;
+    font-weight: 400;
+}
+#navpart2 button{
+    border: none;
+    padding: 12px 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+}
+#content{
+    padding-top: 90px;
+    height: calc(100% - 100px);
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+#content h3{
+    background-color: rgb(249, 151, 220);
+    padding: 10px 18px;
+    width: fit-content;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-weight: 500;
+}
+#content h1{
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+    margin: 30px 0;
+    line-height: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#content h4{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+}
+#content button{
+    border: none;
+    padding: 14px 22px;
+    font-weight: 300;
+    border-radius: 50px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    margin: 30px 0;
+}
+#bottom{
+    height: 350px;
+    width: 100%;
+    background-color: red;
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 250px;
+    background-color: royalblue;
+    border: 2px solid black;
+}
