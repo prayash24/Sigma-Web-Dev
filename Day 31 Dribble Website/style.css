@@ -60,7 +60,7 @@ html, body{
     color: white;
 }
 #content{
-    padding-top: 90px;
+    padding-top: 30px;
     height: calc(100% - 100px);
     width: 100%;
     /* background-color: aquamarine; */
@@ -104,9 +104,9 @@ html, body{
     margin: 30px 0;
 }
 #bottom{
-    height: 350px;
+    height: 270px;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     padding: 5px;
     display: flex;
     flex-wrap: nowrap;
@@ -114,10 +114,79 @@ html, body{
     overflow-x: auto;
     overflow-y: hidden;
 }
+#bottom::-webkit-scrollbar{
+    display: none;
+}
 .elem{
+    position: relative;
     flex-shrink: 0;
     height: 100%;
-    width: 250px;
+    width: 220px;
     background-color: royalblue;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    border-radius: 30px;
+    overflow: hidden;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    /* border-radius: 17px; */
+}
+.elem video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: -100px;
+    /* border-radius: 17px; */
+}
+/* .elem .text-bottom{
+    height: 16%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    color: white;
+}
+.text-bottom h4{
+    font-size: 7px;
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 18px;
+} */
+ 
+#page2{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 40px;
+    /* background-color: red; */
+}
+#page2 h1{
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.box{
+    height: 280px;
+    width: 320px;
+    border-radius: 20px;
+    background-color: yellow;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px;
+    
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 -70px;
+}
+.box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: -40px;
 }
